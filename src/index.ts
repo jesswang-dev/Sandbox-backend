@@ -16,7 +16,7 @@ const splacheCache = new SplacheCache(starWarsSchema)
 
 
 app.get('/', (_req: Request, res: Response) => {
-  return res.send('Express Typescript on Vercel')
+  return res.send('Splache Sandbox on Vercel')
 })
 
 app.use('/graphql/resolver', (req, res) => {

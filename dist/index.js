@@ -17,7 +17,7 @@ const port = 4002;
 const wholeCache = new splache_1.SplacheCacheWhole(starWarsSchema_1.default);
 const splacheCache = new splache_2.SplacheCache(starWarsSchema_1.default);
 app.get('/', (_req, res) => {
-    return res.send('Express Typescript on Vercel');
+    return res.send('Splache Sandbox on Vercel');
 });
 app.use('/graphql/resolver', (req, res) => {
     (0, graphql_1.graphql)({ schema: resolverSchema_1.default, source: req.body.query })
